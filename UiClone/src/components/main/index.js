@@ -8,20 +8,45 @@ import RecentlyList from '../albunsRecently';
 
 const Main = () => {
 
-    useState[recentes,setRecentes] = useState([]);
+    const [recentes, setRecentes] = useState([]);
+
+    useEffect(() => {
+        function getData () {
+            setRecentes(Spot.Recente)
+        }
+        getData();
+    }, [])
 
     return (
-        <SafeAreaView style={styles.screenFull}>
+        <View style={styles.screenFull}>
             <View>
                 <Text style={styles.mostRecent}>Ouvidas Recentemente</Text>
-                <FlatList horizontal
-                    data={Spot.Recent} keyExtractor={item => `${item.id}`}
+                <FlatList horizontal={true}
+                    data={recentes} keyExtractor={item => `${item.id}`}
                     renderItem = {({item}) => (
                         <RecentlyList nome={item.name} imagemAlbum={item.image} />
                     )} 
                  />
             </View>
-        </SafeAreaView>
+            <View>
+                <Text style={styles.mostRecent}>Recomendadas para você</Text>
+                <FlatList horizontal={true}
+                    data={recentes} keyExtractor={item => `${item.id}`}
+                    renderItem = {({item}) => (
+                        <RecentlyList nome={item.name} imagemAlbum={item.image} />
+                    )} 
+                 />
+            </View>
+            <View>
+                <Text style={styles.mostRecent}>Playlists Populares</Text>
+                <FlatList horizontal={true}
+                    data={recentes} keyExtractor={item => `${item.id}`}
+                    renderItem = {({item}) => (
+                        <RecentlyList nome={item.name} imagemAlbum={item.image} />
+                    )} 
+                 />
+            </View>
+        </View>
     )
 }
 

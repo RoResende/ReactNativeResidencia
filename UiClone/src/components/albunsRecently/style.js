@@ -3,22 +3,24 @@ import { StyleSheet } from 'react-native'
 export default StyleSheet.create({
 
     boxView: {
-        width: 20,
-        height: 20,
-        justifyContent: center,
+        flex:1,
+        width: 155,
+        height: 180,
+        justifyContent: 'center',
         marginTop: 0,
         marginLeft: 10,
         marginBottom: 8
     },
 
     imageRecent: {
+      backgroundColor: '#808080',
+      width: '90%',
       height: '90%',
-      width: '100%',
-      background: '#80808055',
       alignSelf: 'center',
     },
 
     infoRecent: {
+        flex: 0.8,
         flexDirection: 'row',
         justifyContent: 'flex-start',
         alignItems: 'center',
@@ -29,8 +31,9 @@ export default StyleSheet.create({
     },
 
     titleRecent : {
+        fontFamily: 'Montserrat-Bold',
         fontSize: 11,
-        color: 'fff',
-        marginLeft: 5
+        color: '#fff',
+        marginLeft: 1
     }
 })

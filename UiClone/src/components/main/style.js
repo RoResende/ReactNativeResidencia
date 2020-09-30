@@ -4,6 +4,8 @@ export default StyleSheet.create({
 
     screenFull: {
         flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'flex-end',
         backgroundColor: '#191414'
     },
 
