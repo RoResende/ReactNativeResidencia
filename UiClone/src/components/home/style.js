@@ -24,10 +24,13 @@ export default StyleSheet.create({
 
     textTitle: {
         textAlignVertical: 'top',
-        marginBottom: 100,
+        marginBottom: 80,
         marginTop: 30,
         marginLeft: 50,
-        marginRight: 50
+        marginRight: 50,
+        color: '#fff',
+        fontSize: 18,
+        fontFamily: 'Montserrat-Bold'
     },
 
     userField : {
@@ -37,9 +40,9 @@ export default StyleSheet.create({
         borderStyle: 'dotted',
         borderColor: '#fff',
         borderWidth: 0.2,
-        borderRadius: 20,
-        backgroundColor: '#999',
-        opacity: 0.4
+        borderRadius: 15,
+        backgroundColor: '#ccc',
+        opacity: 0.3
     },
 
     userPass : {
@@ -49,19 +52,41 @@ export default StyleSheet.create({
         borderStyle: 'dotted',
         borderColor: '#fff',
         borderWidth: 0.2,
-        borderRadius: 20,
-        backgroundColor: '#999',
-        opacity: 0.4
+        borderRadius: 15,
+        backgroundColor: '#ccc',
+        opacity: 0.3
     },
 
     logButton : {
-        width: 300,
+        width: 200,
         height: 60,
-        marginTop: 20,
+        marginTop: 10,
         borderStyle: 'dotted',
         borderColor: '#1DB954',
         borderWidth: 0.2,
         borderRadius: 50,
-        backgroundColor: '#1DB954'
+        backgroundColor: '#1DB954',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+
+    logText : {
+        width: 200,
+        height: 60,
+        marginTop: 20,
+        color: '#191414',
+        fontSize: 20,
+        textAlign: 'center',
+        paddingTop: 4,
+        fontFamily: 'Montserrat-Regular'
+    },
+
+    forgotPass : {
+        width: 200,
+        height: 60,
+        marginTop: 20,
+        color: '#aaa',
+        textAlign: 'center',
+        fontSize: 11
     }
 })

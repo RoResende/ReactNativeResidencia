@@ -14,7 +14,7 @@ import Login from './src/components/home/index'
 const App = () => {
   return (
     <>
-      <Text>Trabalho</Text>
+      <Text>Trabalho React Native - UI Clone // Android Google Pixel 2 9.0</Text>
       <Login />
     </>
   );
