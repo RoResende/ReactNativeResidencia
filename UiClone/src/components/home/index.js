@@ -1,14 +1,18 @@
 import React from 'react';
 import { View, Text, TextInput, Image, TouchableOpacity } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import styles from './style';
 
 const Login = () => {
 
-    const spotifyIcon = require('../../assets/images/Spotify_Icon_RGB_Green.png')
+    const spotifyIcon = require('../../assets/images/icons/Spotify_Icon_RGB_Green.png')
 
     return (
         <View style={styles.screenFull} >
+            <TouchableOpacity>
+                <Icon name='chevron-left' style={styles.iconBack} />
+            </TouchableOpacity>
             <Image source={spotifyIcon} style={styles.imageIcon} />
             <View style={styles.container} >
                 <Text style={styles.textTitle}>Ouça a trilha sonora da sua vida</Text>

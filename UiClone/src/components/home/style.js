@@ -4,16 +4,21 @@ export default StyleSheet.create({
 
     screenFull: {
         flex: 1,
-        width: '100%',
-        height: '100%',
         backgroundColor: '#191414'
+    },
+
+    iconBack: {
+        paddingBottom: 80,
+        paddingLeft: 10,
+        color: '#bbb',
+        fontSize: 40,
+        fontFamily: 'Montserrat-Bold'
     },
 
     imageIcon : {
         width: 80,
         height: 80,
-        alignSelf: 'center',
-        marginTop: 20
+        alignSelf: 'center'
     },
 
     container: {
@@ -25,7 +30,7 @@ export default StyleSheet.create({
     textTitle: {
         textAlignVertical: 'top',
         marginBottom: 80,
-        marginTop: 30,
+        marginTop: 10,
         marginLeft: 50,
         marginRight: 50,
         color: '#fff',
@@ -60,7 +65,6 @@ export default StyleSheet.create({
     logButton : {
         width: 200,
         height: 60,
-        marginTop: 10,
         borderStyle: 'dotted',
         borderColor: '#1DB954',
         borderWidth: 0.2,
@@ -84,7 +88,7 @@ export default StyleSheet.create({
     forgotPass : {
         width: 200,
         height: 60,
-        marginTop: 20,
+        marginTop: 10,
         color: '#aaa',
         textAlign: 'center',
         fontSize: 11
