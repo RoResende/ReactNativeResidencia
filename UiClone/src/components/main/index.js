@@ -13,10 +13,14 @@ import { ScrollView } from 'react-native-gesture-handler';
 const Main = ({ navigation }) => {
 
     const [recentes, setRecentes] = useState([]);
+    const [recomendados, setRecomendados] = useState([]);
+    const [playlists, setPlaylists] = useState([])
 
     useEffect(() => {
         function getData() {
-            setRecentes(Spot.Recente)
+            setRecentes(Spot.Recente);
+            setRecomendados(Spot.Recomendado);
+            setPlaylists(Spot.Playlists);
         }
         getData();
     }, [])
@@ -36,7 +40,7 @@ const Main = ({ navigation }) => {
                 <View>
                     <Text style={styles.showSquare}>Recomendadas para você</Text>
                     <FlatList horizontal={true}
-                        data={recentes} keyExtractor={item => `${item.id}`}
+                        data={recomendados} keyExtractor={item => `${item.id}`}
                         renderItem={({ item }) => (
                             <RecentlyList nome={item.name} imagemAlbum={item.image} />
                         )}
@@ -45,7 +49,7 @@ const Main = ({ navigation }) => {
                 <View>
                     <Text style={styles.showSquare}>Playlists Populares</Text>
                     <FlatList horizontal={true}
-                        data={recentes} keyExtractor={item => `${item.id}`}
+                        data={playlists} keyExtractor={item => `${item.id}`}
                         renderItem={({ item }) => (
                             <RecentlyList nome={item.name} imagemAlbum={item.image} />
                         )}

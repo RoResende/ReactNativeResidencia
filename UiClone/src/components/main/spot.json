@@ -15,5 +15,39 @@
         "name": "Led Zepellin",
         "image": "https://i.scdn.co/image/ab67616d00001e02c8a11e48c91a982d086afc69"
       }
+    ],
+    "Recomendado": [
+      {
+        "id": 1,
+        "name": "Deep Purple",
+        "image": "https://i.scdn.co/image/ab67616d00001e029bddf3d6e46c8331f4fca1d5"
+      },
+      {
+        "id": 2,
+        "name": "Judas Priest",
+        "image": "https://i.scdn.co/image/ab67616d00001e0260db4ca924d17bc6754e89aa"
+      },
+      {
+        "id": 3,
+        "name": "Pink Floyd",
+        "image": "https://i.scdn.co/image/ab67616d00001e02f05e5ac32fdd79d100315a20"
+      }
+    ],
+    "Playlists": [
+      {
+        "id": 1,
+        "name": "Rock Classic",
+        "image": "https://i.scdn.co/image/ab67616d00001e02269da72ca57ac3b18ccbe343"
+      },
+      {
+        "id": 2,
+        "name": "Pure Guitar Heroes",
+        "image": "https://i.scdn.co/image/ab67616d00001e02e15c257226c56421f74fe43d"
+      },
+      {
+        "id": 3,
+        "name": "Pure Hard Rock",
+        "image": "https://i.scdn.co/image/ab67616d00001e02a72a36968ef25332ad07f932"
+      }
     ]
   }
